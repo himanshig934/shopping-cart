@@ -1,7 +1,7 @@
 import React from "react";
 import { Search } from "lucide-react";
 
-const SearchFilter = () => {
+const SearchFilter = ({searchTerm, setSearchTerm}) => {
   return (
     <div className="mb-5 p-4 bg-gray-900 rounded-2xl shadow-xl border border-gray-800 max-w-7xl m-auto mt-8">
       <div className="flex items-center border border-gray-700 rounded-xl overflow-hidden focus-within:ring-4 
@@ -11,9 +11,13 @@ const SearchFilter = () => {
 
         <input
           type="text"
+          value={searchTerm}
           placeholder="Sea rch high-performance product by name or feature..."
           className="w-full p-4 outline-none text-white bg-gray-800 placeholder-gray-500 text-base font-medium"
           aria-label="Search Products"
+          onChange={(e)=>{
+            setSearchTerm(e.target.value)
+          }}
         />
         
       </div>
@@ -22,3 +26,8 @@ const SearchFilter = () => {
 };
 
 export default SearchFilter;
+
+
+
+
+
