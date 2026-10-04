@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
           <img src=
             {product.image}
             alt={product.name}
-            className="w-full h-56 object-cover object-center transition duration-500 group-hover:scale-110 group-hover:opacity-90" />
+            className="w-full h-56 object-cover object-center transition duration-500 group-hover:scalnpe-110 group-hover:opacity-90" />
 
           <div className="absolute bottom-0 left-0 bg-orange-600/95 text-white px-5 py-1 text-[18px] font-bold rounded-tr-xl shadow-lg">
             ₹{product.price.toFixed(2)}

@@ -44,6 +44,7 @@ const Cart = () => {
               </div>
             </h3>
             
+
             <div className="space-y-4 text-gray-400">
 
               <div className="flex justify-between text-xl">
@@ -87,3 +88,12 @@ const Cart = () => {
 };
 
 export default Cart;
+
+
+
+
+
+
+
+
+

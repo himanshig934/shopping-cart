@@ -11,7 +11,7 @@ const SearchFilter = () => {
 
         <input
           type="text"
-          placeholder="Search high-performance product by name or feature..."
+          placeholder="Sea rch high-performance product by name or feature..."
           className="w-full p-4 outline-none text-white bg-gray-800 placeholder-gray-500 text-base font-medium"
           aria-label="Search Products"
         />
