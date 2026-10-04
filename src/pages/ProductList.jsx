@@ -10,19 +10,19 @@ const ProductList = () => {
   const { products } = useCart();
   const [searchTerm, setSearchTerm] = useState('');
 
-  const filterProducts = products.filter((product ) => {
+  const filterProducts = products.filter((product) => {
     const matchesSearch = product.name.toLowerCase().
-    includes(searchTerm.toLowerCase())
-    || product.description.toLowerCase().
-    includes(searchTerm.toLowerCase());
+      includes(searchTerm.toLowerCase())
+      || product.description.toLowerCase().
+        includes(searchTerm.toLowerCase());
 
 
-   const matchesCategory =
-    selectedCategory === 'All' || product.category === selectedCategory;
-return matchesSearch && matchesCategory;
+    const matchesCategory =
+      selectedCategory === 'All' || product.category === selectedCategory;
+    return matchesSearch && matchesCategory;
 
   })
-   
+
   return (
     <>
 

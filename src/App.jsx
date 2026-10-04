@@ -7,13 +7,30 @@ import Checkout from './pages/Checkout';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+import { ToastContainer, toast, Bounce } from 'react-toastify';
+
 const App = () => {
   return (
     <>
       <Router>
 
+        <ToastContainer
+          position="top-right"
+          autoClose={1500}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+          transition={Bounce}
+        />
+        
+
         <div className='bg-gray-950 min-h-screen font-sans relative pb-10'>
-            <Navbar />
+          <Navbar />
 
           <Routes>
             <Route path='/' element={<ProductList />} />
@@ -22,9 +39,9 @@ const App = () => {
             <Route path='/checkout' element={<Checkout />} />
           </Routes>
 
-         <Footer />
+          <Footer />
         </div>
-       
+
       </Router>
     </>
   )
